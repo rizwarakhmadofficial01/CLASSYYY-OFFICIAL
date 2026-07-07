@@ -1,0 +1,16 @@
+PENTING - DRIVER JDBC MYSQL
+=============================
+Karena alasan lisensi, file driver mysql-connector-j-x.x.x.jar TIDAK
+disertakan dalam paket ini dan wajib diunduh sendiri (gratis & resmi).
+
+Langkah:
+1. Unduh driver di: https://dev.mysql.com/downloads/connector/j/
+   (pilih "Platform Independent", format ZIP/TAR, lalu ekstrak, ambil
+   file .jar di dalamnya, contoh: mysql-connector-j-8.4.0.jar)
+2. Salin file .jar tersebut ke folder lib/ ini (sejajar file ini).
+3. Buka project di NetBeans -> klik kanan "Libraries" pada project ->
+   pilih "Add JAR/Folder..." -> arahkan ke file jar di folder lib/ ini.
+4. Jalankan project (Run Project / F6).
+
+Tanpa driver ini, aplikasi akan menampilkan pesan
+"Driver JDBC MySQL tidak ditemukan" saat mencoba login.
